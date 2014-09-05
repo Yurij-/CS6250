@@ -3,7 +3,7 @@ gt-cs6250
 
 Project Code for Computer Networking
 
-Nam Pho (npho3@gatech.edu)
+Nam Pho (npho3@gatech.edu) <br />
 Forked 9/4/14
 
 ####Notes:

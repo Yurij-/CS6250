@@ -24,11 +24,11 @@ class MNTopo(Topo):
         receiver = self.addHost('receiver', **hostConfig)
 
         # Wire receiver
-        self.addLink(receiver, s2, **linkConfig)
+        self.addLink(receiver, s1, **linkConfig)
         
         # Wire switches
         self.addLink(s1, s2, **linkConfig)
         
         # Wire sender
-        self.addLink(sender, s1, **linkConfig)
+        self.addLink(s2, sender, **linkConfig)
 

@@ -6,8 +6,16 @@ Project Code for Computer Networking
 Nam Pho (npho3@gatech.edu) <br />
 Forked 9/4/14
 
-####Notes:
 
+
+####Table of Contents
+**[Notes](#notes)
+**[assignment-2](#assignment-2)
+**[assignment-3](#assignment-3)
+
+
+
+####Notes
 1\. Clone the original OMS6250 repo and fork it.
 
 ```
@@ -28,3 +36,19 @@ $ git fetch upstream
 $ git checkout master
 $ git merge upstream/master
 ```
+
+
+
+####assignment-2
+- Run `topology.sh` and review output.
+- Modify `mntopo.py` to insert an additional switch between the hosts. Helpful to review Mininet [documentation](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet#wiki-creating) on this.
+- Rerun `topology.sh`, output should be similar.
+- Test latency by running the ping wrapper, `ping.py`. Should get ~6ms.
+- Increase the latency delay from 1ms to 10ms in `mntopo.py`.
+- Re-test latency. Should get ~60ms.
+- Increase the bandwidth from 10Mbps to 50Mbps in `mntopo.py`.
+- Reren `topology.sh` and review output.
+
+####assignment-3
+
+- Work next week.

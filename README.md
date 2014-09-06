@@ -8,10 +8,10 @@ Forked 9/4/14
 
 
 
-####Table of Contents
-**[Notes](#notes)
-**[assignment-2](#assignment-2)
-**[assignment-3](#assignment-3)
+##Table of Contents
+- [Notes](#notes)
+- [assignment-2](#assignment-2)
+- [assignment-3](#assignment-3)
 
 
 

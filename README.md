@@ -1,10 +1,10 @@
-gt-cs6250
-=========
+CS6250
+======
 
 Project code for CS6250 (Computer Networking) at Georgia Tech for fall 2014, lectures freely available through Udacity. Work done using [Mininet](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet) to simulate network environments.
 
 Nam Pho (npho3@gatech.edu) <br />
-Forked 9/4/14
+Forked from https://github.com/OMS6250/gt-cs6250 on 9/4/14
 
 
 

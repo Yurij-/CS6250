@@ -27,7 +27,7 @@ $ git clone https://github.com/OMS6250/gt-cs6250.git
 2\. Adjust the repo to point to your fork and then upstream as the original.
 
 ```
-$ git remote set-url origin git@github.com:nampho2/gt-cs6250.git
+$ git remote set-url origin git@github.com:nampho2/CS6250.git
 $ git remote add upstream https://github.com/OMS6250/gt-cs6250.git
 ```
 

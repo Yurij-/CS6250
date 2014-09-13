@@ -43,7 +43,7 @@ $ git merge upstream/master
 
 ####assignment-2
 
-[assignment-2-topology](img/assignment-2a.gif)
+![assignment-2-topology](img/assignment-2a.gif)
 
 - Run `topology.sh` and review output.
 - Modify `mntopo.py` to insert an additional switch between the hosts. Helpful to review Mininet [documentation](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet#wiki-creating) on this.
@@ -57,7 +57,7 @@ $ git merge upstream/master
 
 ####assignment-3
 
-[assignment-3-topology](img/assignment-3a.gif)
+![assignment-3-topology](img/assignment-3a.gif)
 
 - In progress.
 

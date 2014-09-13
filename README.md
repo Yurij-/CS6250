@@ -12,6 +12,8 @@ Forked 9/4/14
 - [Notes](#notes)
 - [assignment-2](#assignment-2)
 - [assignment-3](#assignment-3)
+- [assignment-4](#assignment-4)
+- [assignment-5](#assignment-5)
 
 
 
@@ -49,6 +51,17 @@ $ git merge upstream/master
 - Increase the bandwidth from 10Mbps to 50Mbps in `mntopo.py`.
 - Reren `topology.sh` and review output.
 
+
 ####assignment-3
+
+- Work next week.
+
+
+####assignment-4
+
+- In progress.
+
+
+####assignment-5
 
 - Work next week.

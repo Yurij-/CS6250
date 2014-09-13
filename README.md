@@ -39,6 +39,19 @@ $ git checkout master
 $ git merge upstream/master
 ```
 
+4\. Adjust `PYTHONPATH` environment variable to include helpful cross-assignment imports.
+
+```
+export PYTHONPATH=`pwd`/lib/:$PYTHONPATH
+```
+
+or
+
+```
+export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
+
+```
+
 
 
 ####assignment-2
@@ -52,14 +65,18 @@ $ git merge upstream/master
 - Increase the latency delay from 1ms to 10ms in `mntopo.py`.
 - Re-test latency. Should get ~60ms.
 - Increase the bandwidth from 10Mbps to 50Mbps in `mntopo.py`.
-- Reren `topology.sh` and review output.
+- Re-run `topology.sh` and review output.
 
 
 ####assignment-3
 
 ![assignment-3-topology](img/assignment-3a.gif)
 
-- In progress.
+- Complete the `__init__` function of the `ParkingLotTopo` class to generalize this for any number of hosts, n > 0. The resulting topology is as shown in the figure above.
+- Complete the `run_parkinglot_expt` function to generate TCP flows using `iperf`. 
+- Final result is running `sudo ./parkinglot-sweep.sh` to test various parameters of `n = 1, 2, 3, 4, 5`.
+- Run my additional `submit.sh` script to collect the output of `parkinglot-sweep.sh` wrapper per submission specifications. Submit all `bwm.txt` files.
+- Complete additional quiz questions in `quiz.txt`.
 
 
 ####assignment-4
@@ -70,3 +87,5 @@ $ git merge upstream/master
 ####assignment-5
 
 - Work next week.
+
+

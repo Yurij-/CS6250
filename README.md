@@ -49,7 +49,6 @@ or
 
 ```
 export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
-
 ```
 
 

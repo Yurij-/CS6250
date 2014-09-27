@@ -53,9 +53,7 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 
 
 
-####assignment-2
-
-##Mininet Topology
+####assignment-2: Mininet Topology
 
 ![assignment-2-topology](img/assignment-2a.gif)
 
@@ -69,9 +67,7 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 - Re-run `topology.sh` and review output.
 
 
-####assignment-3
-
-##Parking Lot
+####assignment-3: Parking Lot
 
 ![assignment-3-topology](img/assignment-3a.gif)
 
@@ -82,9 +78,7 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 - Complete additional quiz questions in `quiz.txt`.
 
 
-####assignment-4
-
-##Learning Switch
+####assignment-4: Learning Switch
 
 ![assignment-4-topology](img/assignment-4a.png)
 

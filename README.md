@@ -10,10 +10,10 @@ Forked from https://github.com/OMS6250/gt-cs6250 on 9/4/14
 
 ##Table of Contents
 - [Notes](#notes)
-- [assignment-2](#assignment-2) Mininet Topology
-- [assignment-3](#assignment-3) Parking Lot
-- [assignment-4](#assignment-4) Learning Switch
-- [assignment-5](#assignment-5) Buffer Bloat
+- [assignment-2](#assignment-2-mininet-topology) Mininet Topology
+- [assignment-3](#assignment-3-parking-lot) Parking Lot
+- [assignment-4](#assignment-4-learning-switch) Learning Switch
+- [assignment-5](#assignment-5-buffer-bloat) Buffer Bloat
 
 
 
@@ -67,6 +67,7 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 - Re-run `topology.sh` and review output.
 
 
+
 ####assignment-3: Parking Lot
 
 ![assignment-3-topology](img/assignment-3a.gif)
@@ -78,6 +79,7 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 - Complete additional quiz questions in `quiz.txt`.
 
 
+
 ####assignment-4: Learning Switch
 
 ![assignment-4-topology](img/assignment-4a.png)
@@ -85,8 +87,13 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 - Adjust `learning-switch.py` code to generate ARP tables.
 - Answer some quiz questions in `hw4.txt`.
 
-####assignment-5
+
+
+####assignment-5: Buffer Bloat
 
 - Work next week.
+
+
+
 
 

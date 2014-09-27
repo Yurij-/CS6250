@@ -72,6 +72,18 @@ class LearningSwitch(DynamicPolicy):
                                       str(self.fwd_table[entry][fwd_rule]))
         print "----------------"
 
+	# **** Adding the following lines for ease of grading *****
+
+	f = open("output.txt", "w")
+	for entry in self.fwd_table.keys():
+	    f.write("Switch " + str(entry)+ "\n")
+	    for fwd_rule in self.fwd_table[entry].keys():
+	         f.write(" %s : %s \n" % (str(fwd_rule),
+	                                  str(self.fwd_table[entry][fwd_rule])))
+	f.write("---------------- \n")
+	f.close()
+
+	# **********************************************
 
     def learn_route(self, pkt):
         """  This function adds new routes into the fowarding table. """
@@ -81,7 +93,6 @@ class LearningSwitch(DynamicPolicy):
         #    self.fwd_table['s1'][mac_addr] = port
         # You must extract the correct pieces from the packet to populate
         # the forwarding table. 
-
 
 
         # print out the switch tables:
@@ -96,19 +107,27 @@ class LearningSwitch(DynamicPolicy):
 
     def push_rules(self):
         new_policy = None
+        not_flood_pkts = None
         
         for entry in self.fwd_table.keys():
             for fwd_rule in self.fwd_table[entry].keys():
                 if new_policy == None:
-                    new_policy = (match(switch=entry, srcport=fwd_rule) >> 
+                    new_policy = (match(switch=int(entry), dstmac=fwd_rule) >> 
                                   fwd(self.fwd_table[entry][fwd_rule]))
                 else:
-                    new_policy += (match(switch=entry, srcport=fwd_rule) >> 
+                    new_policy += (match(switch=int(entry), dstmac=fwd_rule) >> 
                                    fwd(self.fwd_table[entry][fwd_rule]))
+                
+                if not_flood_pkts == None:
+                    not_flood_pkts = (match(switch=int(entry), dstmac=fwd_rule))
+                else:
+                    not_flood_pkts |= (match(switch=int(entry), dstmac=fwd_rule))
+
+
         if new_policy == None:
             self.policy = self.flood + self.query
         else:
-            self.policy = new_policy + self.flood + self.query
+            self.policy = if_(not_flood_pkts, new_policy, self.flood) + self.query
         
         # The following line can be uncommented to see your policy being
         # built up, say during a flood period. When submitting your completed

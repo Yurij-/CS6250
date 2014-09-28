@@ -84,8 +84,47 @@ export PYTHONPATH=/home/mininet/gt-cs6250/lib/:$PYTHONPATH
 
 ![assignment-4-topology](img/assignment-4a.png)
 
-- Adjust `learning-switch.py` code to generate ARP tables.
+- Code `learn_route()` function in `learning-switch.py` code to generate ARP tables.
+- Run topology with commands:
+
+```
+# symbolically link topology to pyretic
+$ ln -s ~/CS6250/assignment-4/learning-switch.py ~/pyretic/pyretic/modules/
+
+# run pyretic first
+$ cd ~/pyretic/
+$ python pyretic.py -m p0 pyretic.modules.learning-switch
+
+# run mininet in separate terminal
+$ cd ~/CS6250/assignment-4/
+$ sudo python learning-switch-topo.py
+
+# pingall hosts
+mininet> pingall
+```
+
 - Answer some quiz questions in `hw4.txt`.
+- Note: use `arping` to send single ARP packets and watch the learning switch in action to answer quiz.
+
+```
+# install arping in Ubuntu
+$ sudo apt-get install arping
+
+# 0. h2 ping (ICMP) h6
+mininet> h2 ping h6
+
+# 3. h2 ARP request to h6
+mininet> h2 arping -B -c 1 h6
+
+# 4. h6 ARP reply to h2
+mininet> h6 arping -b -c 1 -t 00:00:00:00:00:02 h2
+
+# 5. h6 ARP request to h3
+mininet> h6 arping -B -c 1 h3
+
+# 6. h3 ARP reply to h6
+mininet> h3 arping -b -c 1 -t 00:00:00:00:00:06 h6
+```
 
 
 

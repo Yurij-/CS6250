@@ -93,7 +93,7 @@ class LearningSwitch(DynamicPolicy):
         #    self.fwd_table['s1'][mac_addr] = port
         # You must extract the correct pieces from the packet to populate
         # the forwarding table. 
-
+        self.fwd_table[str( get_switch(pkt) )][get_src_mac(pkt)] = get_inport(pkt)
 
         # print out the switch tables:
         self.print_switch_tables()

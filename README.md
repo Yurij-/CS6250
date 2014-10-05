@@ -142,9 +142,10 @@ The corresponding abstract Mininet topology is represented below:
 
 ![assignment-5-topology-b](img/assignment-5b.png)
 
-```
-# step 1: run Mininet topology with various buffers and sizes
 
+1\. Run select Mininet topology with various buffers and sizes.
+
+```
 # 100 packet router buffer
 $ sudo ./run.sh
 
@@ -153,34 +154,33 @@ $ sudo ./run-minq.sh
 
 # 2 queue router buffer
 $sudo ./run-diff.sh
+```
 
+2\. Run monitoring script if desired, `cwnd` data saved to `<title of run>_tcpprobe.txt` file.
 
-
-# step 2: run monitoring script if desired
+```
 $ ./monitor.sh <title of run>
+```
 
-# cwnd data saved to <title of run>_tcpprobe.txt
+3\. Saturate the router bandwidth using `iperf` script from `h1` to `h2`, watch the packet flow for ~70s for equilibrium and then request data under resource contention and saturated bandwidth using `wget`.
 
-
-
-# step 3: run experiment
-
-# use iperf script to fill bandwidth from h1 to h2
+```
+# run iperf script
 mininet> h1 ./iperf.sh
 
-# watch iperf flow, wait ~70s
+# watch packets, wait ~70s
 mininet> h2 tail -f ./iperf-recv.txt
 
-# resource contention, get data under saturated bandwidth using wget
+# get data under saturated bandwidth using wget
 mininet> h2 wget http://10.0.0.1
-
-
-
-# step 4: plot data
-$ sudo ./plot_figures.sh <title of run>
-
-# go to http://<IP>:8000
 ```
+
+4\. Visualize how router handles resource contention, go to `http://<IP>:8000`.
+
+```
+$ sudo ./plot_figures.sh <title of run>
+```
+
 
 
 ####assignment-6: TCP Fast Open

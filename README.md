@@ -153,7 +153,7 @@ $ sudo ./run.sh
 $ sudo ./run-minq.sh
 
 # 2 queue router buffer
-$sudo ./run-diff.sh
+$ sudo ./run-diff.sh
 ```
 
 2\. Run monitoring script if desired, `cwnd` data saved to `<title of run>_tcpprobe.txt` file.

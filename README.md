@@ -142,8 +142,45 @@ The corresponding abstract Mininet topology is represented below:
 
 ![assignment-5-topology-b](img/assignment-5b.png)
 
-asdf
+```
+# step 1: run Mininet topology with various buffers and sizes
 
+# 100 packet router buffer
+$ sudo ./run.sh
+
+# smaller 20 packet router buffer
+$ sudo ./run-minq.sh
+
+# 2 queue router buffer
+$sudo ./run-diff.sh
+
+
+
+# step 2: run monitoring script if desired
+$ ./monitor.sh <title of run>
+
+# cwnd data saved to <title of run>_tcpprobe.txt
+
+
+
+# step 3: run experiment
+
+# use iperf script to fill bandwidth from h1 to h2
+mininet> h1 ./iperf.sh
+
+# watch iperf flow, wait ~70s
+mininet> h2 tail -f ./iperf-recv.txt
+
+# resource contention, get data under saturated bandwidth using wget
+mininet> h2 wget http://10.0.0.1
+
+
+
+# step 4: plot data
+$ sudo ./plot_figures.sh <title of run>
+
+# go to http://<IP>:8000
+```
 
 
 ####assignment-6: TCP Fast Open

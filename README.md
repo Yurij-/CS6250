@@ -136,11 +136,11 @@ mininet> h3 arping -b -c 1 -t 00:00:00:00:00:06 h6
 
 Simulate buffer bloat as seen on typical home ISP connection as seen in the figure below:
 
-![assignment-5-topology-a](img/assignment-5a.gif)
+![assignment-5-topology-a](img/assignment-5a.png)
 
 The corresponding abstract Mininet topology is represented below:
 
-![assignment-5-topology-b](img/assignment-5b.gif)
+![assignment-5-topology-b](img/assignment-5b.png)
 
 asdf
 

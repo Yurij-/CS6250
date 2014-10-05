@@ -14,6 +14,10 @@ Forked from https://github.com/OMS6250/gt-cs6250 on 9/4/14
 - [assignment-3](#assignment-3-parking-lot) Parking Lot
 - [assignment-4](#assignment-4-learning-switch) Learning Switch
 - [assignment-5](#assignment-5-buffer-bloat) Buffer Bloat
+- [assignment-6](#assignment-6-tcp-fast-open) TCP Fast Open
+- [assignment-7](#assignment-7-tba) TBA
+- [assignment-8](#assignment-8-tba) TBA
+- [assignment-9](#assignment-9-tba) TBA
 
 
 
@@ -129,6 +133,38 @@ mininet> h3 arping -b -c 1 -t 00:00:00:00:00:06 h6
 
 
 ####assignment-5: Buffer Bloat
+
+Simulate buffer bloat as seen on typical home ISP connection as seen in the figure below:
+
+![assignment-5-topology-a](img/assignment-5a.gif)
+
+The corresponding abstract Mininet topology is represented below:
+
+![assignment-5-topology-b](img/assignment-5b.gif)
+
+asdf
+
+
+
+####assignment-6: TCP Fast Open
+
+- Work next week.
+
+
+
+####assignment-7: TBA
+
+- Work next week.
+
+
+
+####assignment-8: TBA
+
+- Work next week.
+
+
+
+####assignment-9: TBA
 
 - Work next week.
 

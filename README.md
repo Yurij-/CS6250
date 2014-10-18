@@ -185,7 +185,21 @@ $ sudo ./plot_figures.sh <title of run>
 
 ####assignment-6: TCP Fast Open
 
-- Work next week.
+1\. Read the original TCP Fast Open (TFO) paper [[PDF](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/37517.pdf)] to answer quiz questions.
+
+2\. Run the simulation and record as `observations.txt` file, basically should show that there are web performance enhancements under TFO vs not TFO.
+
+```
+# install pre-req packages
+$ sudo apt-get update 
+$ sudo apt-get install vnc4server 
+$ sudo apt-get install libnss3-dev 
+$ sudo easy_install termcolor
+
+# run simulation
+$ vnc4server
+$ sudo ./run.sh
+```
 
 
 

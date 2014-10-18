@@ -5,3 +5,7 @@ assignment-5/experiment-*
 assignment-5/udp-*
 assignment-5/index.html
 assignment-5/iperf*
+assignment-6/client
+assignment-6/output-figures
+assignment-6/serverlogs
+assignment-6/test_shell.log

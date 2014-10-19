@@ -185,9 +185,9 @@ $ sudo ./plot_figures.sh <title of run>
 
 ####assignment-6: TCP Fast Open
 
-1\. Read the original TCP Fast Open (TFO) paper [[PDF](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/37517.pdf)] to answer quiz questions.
+1\. Read the original TCP Fast Open (TFO) paper [[PDF](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/37517.pdf)] to answer quiz questions. Additional useful slides [here](http://www.ietf.org/proceedings/80/slides/tcpm-3.pdf).
 
-2\. Run the simulation and record as `observations.txt` file, basically should show that there are web performance enhancements under TFO vs not TFO.
+2\. Run the simulation and record as `observations.txt` file, basically should show that there are web performance enhancements under TFO vs not TFO. Experiment inspired from other [assignment](http://reproducingnetworkresearch.wordpress.com/2013/03/13/tcp-fastopen/).
 
 ```
 # install pre-req packages
